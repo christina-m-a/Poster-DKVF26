@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regionale Zusammenhänge kinder- und jugendpsychiatrischer Diagnosen – MGWR-Dashboard</title>
+<title>Interaktives Dashboard</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -297,9 +297,9 @@
 
 <header>
   <div class="title-block">
-    <p class="eyebrow">Multiskalierte geographisch gewichtete Regression (MGWR)</p>
-    <h1>Regionale Zusammenhänge kinder- &amp; jugendpsychiatrischer Diagnoseinzidenzen in Deutschland</h1>
-    <p class="sub">Interaktive Darstellung räumlich variierender Regressionskoeffizienten auf Kreisebene (N = 400) für Entwicklungs-, Belastungs- und Aktivitätsstörungen.</p>
+    <p class="eyebrow">Clusteranalyse und (multiskalierte) geographisch gewichtete Regression ((M)GWR)</p>
+    <h1>Regionale Determinanten psychischer Erkrankungen im Kindes- und Jugendalter in Deutschland</h1>
+    <p class="sub">Interaktive Darstellung lokaler Cluster und räumlich variierender Regressionskoeffizienten auf Kreisebene (N = 400) für Aktivitäts-, Entwicklungs- und Belastungsstörungen</p>
   </div>
   <div class="meta">
     Christina Arnold, Bernhard Breil, Maria Weyermann &middot; Hochschule Niederrhein<br>
@@ -324,7 +324,7 @@
 </div>
 
 <div id="methodPanel">
-  <p><strong>Was zeigt diese Karte?</strong> Jeder Kreis erhält aus einem multiskalierten geographisch gewichteten Regressionsmodell (MGWR) einen <em>lokalen</em> Regressionskoeffizienten β für den gewählten Indikator – im Unterschied zu einem globalen Modell darf dieser Zusammenhang also von Region zu Region unterschiedlich stark oder sogar gegensätzlich ausfallen. <strong>Blau</strong> markiert einen negativen, <strong>Rot</strong> einen positiven lokalen Zusammenhang mit der Diagnoseinzidenz. Kreise mit blass eingefärbten, gestrichelten Umrissen sind <strong>statistisch nicht signifikant</strong> (|t| &lt; 1,96).</p>
+  <p><strong>Was zeigt diese Karte?</strong> Jeder Kreis erhält aus einem multiskalierten geographisch gewichteten Regressionsmodell (MGWR) einen <em>lokalen</em> Regressionskoeffizienten β für den gewählten Indikator – im Unterschied zu einem globalen Modell kann dieser Zusammenhang also von Region zu Region unterschiedlich stark oder sogar gegensätzlich ausfallen. <strong>Blau</strong> markiert einen negativen, <strong>Rot</strong> einen positiven lokalen Zusammenhang mit der Diagnoseinzidenz. Kreise mit blass eingefärbten, gestrichelten Umrissen sind <strong>statistisch nicht signifikant</strong> (|t| &lt; 1,96).</p>
 </div>
 
 <main>
@@ -343,18 +343,18 @@
     </div>
 
     <div class="rank-section">
-      <h2>Stärkster positiver Zusammenhang</h2>
+      <h2>Stärkste positive Zusammenhänge</h2>
       <ul class="rank-list" id="rankPos"></ul>
     </div>
     <div class="rank-section">
-      <h2>Stärkster negativer Zusammenhang</h2>
+      <h2>Stärkste negative Zusammenhänge</h2>
       <ul class="rank-list" id="rankNeg"></ul>
     </div>
   </aside>
 </main>
 
 <footer>
-  <span>Eigene Darstellung &middot; Quellen: BBSR – INKAR (Datenlizenz Deutschland 2.0), Zentralinstitut für die kassenärztliche Versorgung – Versorgungsatlas</span>
+  <span>Eigene Darstellung &middot; Datengrundlagen Inzidenzraten: Zentralinstitut für die kassenärztliche Versorgung – Versorgungsatlas-Bericht Nr. 23/05 (Kohring et al., 2023)</span>
   <span>Kartengrundlage: BKG – VG5000 (vereinfacht)</span>
 </footer>
 
