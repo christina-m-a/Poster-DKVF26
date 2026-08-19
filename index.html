@@ -749,7 +749,7 @@ function buildIndikatorOptions(){
     const varKey = i.resolve(state.erkrankung);
     const opt = document.createElement('option');
     opt.value = i.concept;
-    opt.textContent = i.label || labelFor(varKey, i.concept);
+    opt.textContent = labelFor(varKey, i.concept);
     if(i.concept===state.concept) opt.selected = true;
     indSel.appendChild(opt);
   });
